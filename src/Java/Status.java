@@ -1,5 +1,8 @@
 package Java;
 
+/**
+ * @author Stoic Neutron
+ */
 public class Status {
     
     private boolean approved = false;

@@ -2,6 +2,9 @@ package Java;
 
 import java.time.LocalDateTime;
 
+/**
+ * @autor Stoic Neutron
+ */
 public class Case{
     
     private String caseID = null;

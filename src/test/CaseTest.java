@@ -8,6 +8,9 @@ import java.time.LocalDateTime;
 
 import org.junit.jupiter.api.*;
 
+/**
+ * @author Stoic Neutron
+ */
 class CaseTest {
     
     @Test
