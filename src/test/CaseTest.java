@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import org.junit.jupiter.api.*;
 
 /**
- * @author Stoic Neutron
+ * @author Samnang Thorn
  */
 class CaseTest {
     

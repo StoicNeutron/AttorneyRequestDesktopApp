@@ -10,7 +10,7 @@ import Java.Status;
 import Java.StatusCode;
 
 /**
- * @author Stoic Neutron
+ * @author Samnang Thorn
  */
 class StatusTest {
 

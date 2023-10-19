@@ -3,7 +3,7 @@ package Java;
 import java.time.LocalDateTime;
 
 /**
- * @autor Stoic Neutron
+ * @autor Samnang Thorn
  */
 public class Case{
     
@@ -11,6 +11,8 @@ public class Case{
     private LocalDateTime startDate = null;
     private LocalDateTime submitDate = null;
     private LocalDateTime lastEditDate = null;
+    //private Immigrant immigrant = null;
+    //private Attorney attorney = null;
     private Status status = null;
 
     /**

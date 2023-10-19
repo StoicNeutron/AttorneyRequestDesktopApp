@@ -1,7 +1,7 @@
 package Java;
 
 /**
- * @author Stoic Neutron
+ * @author Samnang Thorn
  */
 public class Status {
     
