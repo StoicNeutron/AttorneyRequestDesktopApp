@@ -1,4 +1,4 @@
-package GroupProject;
+package Java;
 
 import java.util.LinkedList;
 

@@ -1,4 +1,4 @@
-package GroupProject;
+package Java;
 import java.time.LocalDateTime;
 
 public class Immigrant {

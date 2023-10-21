@@ -1,10 +1,12 @@
-package GroupProject;
+package test;
 import static org.junit.Assert.*;
 
 import java.time.LocalDateTime;
 
 import static org.hamcrest.CoreMatchers.*;
 import org.junit.Test;
+
+import Java.Immigrant;
 public class ImmigrantTest {
     @Test
     @SuppressWarnings("deprecation")

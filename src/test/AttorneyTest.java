@@ -1,7 +1,10 @@
-package GroupProject;
+package test;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.junit.Test;
+
+import Java.Attorney;
+import Java.Immigrant;
 public class AttorneyTest {
     @Test
     @SuppressWarnings("deprecation")
