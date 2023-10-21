@@ -2,6 +2,9 @@ package Java;
 
 import java.util.LinkedList;
 
+/**
+ * @author Nash Leaptrot
+ */
 public class Attorney {
     private String name;
     private String contactInfo;

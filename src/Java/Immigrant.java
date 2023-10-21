@@ -1,6 +1,9 @@
 package Java;
 import java.time.LocalDateTime;
 
+/**
+ * @author Nash Leaptrot
+ */
 public class Immigrant {
     
     private String name;
@@ -14,6 +17,10 @@ public class Immigrant {
         this.dob = LocalDateTime.of(2023, 04, 24 ,14, 33, 00);
         this.address = "1234 Fillername Street";
     }
+    public Immigrant(String string, int i) {
+        // TO BE IMPLEMENT
+    }
+
     //Getters and setters
     public String getName() {
         return this.name;

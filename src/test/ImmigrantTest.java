@@ -7,6 +7,9 @@ import static org.hamcrest.CoreMatchers.*;
 import org.junit.Test;
 
 import Java.Immigrant;
+/**
+ * @author Nash Leaptrot
+ */
 public class ImmigrantTest {
     @Test
     @SuppressWarnings("deprecation")

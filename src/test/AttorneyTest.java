@@ -5,6 +5,9 @@ import org.junit.Test;
 
 import Java.Attorney;
 import Java.Immigrant;
+/**
+ * @author Nash Leaptrot
+ */
 public class AttorneyTest {
     @Test
     @SuppressWarnings("deprecation")
