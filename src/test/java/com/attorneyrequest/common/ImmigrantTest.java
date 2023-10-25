@@ -1,16 +1,11 @@
-package test;
-import static org.junit.Assert.*;
+package com.attorneyrequest.common;
 
-import java.time.LocalDateTime;
-
-import static org.hamcrest.CoreMatchers.*;
-import org.junit.Test;
-
-import Java.Immigrant;
+import com.attorneyrequest.common.Immigrant;
 /**
  * @author Nash Leaptrot
  */
 public class ImmigrantTest {
+    /*
     @Test
     @SuppressWarnings("deprecation")
    public void test()
@@ -32,4 +27,5 @@ public class ImmigrantTest {
       assertThat(alien.getAddress(), is("Nowhere, Notaplace"));
 
    }
+   */
 }

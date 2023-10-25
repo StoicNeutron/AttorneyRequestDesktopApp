@@ -1,9 +1,9 @@
-package test;
+package com.attorneyrequest.common;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import Java.Case;
-import Java.StatusCode;
+import com.attorneyrequest.common.Case;
+import com.attorneyrequest.common.StatusCode;
 import java.time.LocalDateTime;
 
 import org.junit.jupiter.api.*;

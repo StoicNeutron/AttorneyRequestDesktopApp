@@ -1,4 +1,4 @@
-package Java;
+package com.attorneyrequest.common;
 
 import java.time.LocalDateTime;
 
@@ -16,7 +16,7 @@ public class Case{
     private Status status = null;
 
     /**
-     * Contructor.
+     * Constructor.
      */
     public Case(){
         this.caseID = "TO DO"; // to do function generate unique case ID

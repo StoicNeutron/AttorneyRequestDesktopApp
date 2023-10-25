@@ -1,4 +1,4 @@
-package Java;
+package com.attorneyrequest.common;
 
 import java.util.LinkedList;
 import java.util.Queue;
