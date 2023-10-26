@@ -1,7 +1,5 @@
 package com.attorneyrequest.data_entry;
 
-import com.attorneyrequest.validation.ValidationGUI;
-
 /**
  *
  * @author stoicneutron

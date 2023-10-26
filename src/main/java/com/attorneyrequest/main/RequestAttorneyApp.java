@@ -4,8 +4,6 @@ import com.attorneyrequest.data_entry.DataEntryGUI;
 import com.attorneyrequest.validation.ValidationGUI;
 import com.attorneyrequest.verification.VerificationGUI;
 
-import java.util.ArrayList;
-
 /**
  * This is the main class of this project.
  * @author Samnang Thorn
