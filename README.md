@@ -1,19 +1,17 @@
 <h3>CS 321 By Dr.Michael Reep</h3>
 <h3>Software Engineering</h3>
 
-<h5>Useful commands for working with this repo:</h5>
-<ul>
-  <li>Clone this repo: 
-    <p>Go to any of your local directory that you want to place this repo use this command: <code>git clone https://github.com/StoicNeutron/G21CS321.git</code></p>
-  </li>
-  <li>Making change and push back to the repo:
-    <p>It is always a good idea to create a new working branch from your Master branch. Use this command: <code>git branch your-new-branch-name</code> then switch to the new branch with this command: <code>git checkout your-new-branch-name</code>. Now you on a new branch and ready to make any change to this repo. When done, use <code>git add file-that-you-want-to-commit</code> then use <code>git commit -m"your commit message"</code>. You have successfully commit your change. One final step is to push back to the Repo. Use this command: <code>git push</code></p>
-  </li>
-  <li>
-    Make sure to get the latest version of the repo
-    <p>before each of work(any change to the repo) with this command: <code>git pull</code>.</p>
-  </li>
-</ul>
+<h5>Team Workflow Information</h5>
+<p>Currently, we are using the issue approach. Meaning there will be an issue assigned to you in the issue tab within this repo. There also a specfic branch that already link to your issue assigned to you. Below are the steps for you to contribute:</p>
+<ol>
+  <li>Clone this repo using <code>git clone repo_https_link</code></li>
+  <li>Create a new branch in your local: <code>git branch branch_name_of_your_issue_linked</code></li>
+  <li>Checkout that new branch and do your program: <code>git checkout branch_name_of_your_issue_linked</code></li>
+  <li>After done making change: <code>git commit -m"your commit message"</code> make sure that you stage the file which you made change to using <code>git add your_file_to_commit</code></li>
+  <li>Push it back to the Repo: <code>git push</code></li>
+  <li>Pull request: In the github website, go to the repo and your branch, click create a pull request. Congratulation! You have contribute to the creation of this repo.</li>
+</ol>
+<p>Note! The above steps are the only way, as long as you able to push in to the right branch and clear the issue from the issue board, you good to go.</p>
 
 <h5>Team Members</h5>
 <ul>
