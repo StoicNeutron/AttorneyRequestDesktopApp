@@ -1,13 +1,12 @@
-package test;
-
+package com.attorneyrequest.common;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import Java.Status;
-import Java.StatusCode;
+import com.attorneyrequest.common.Status;
+import com.attorneyrequest.common.StatusCode;
 
 /**
  * @author Samnang Thorn

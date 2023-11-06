@@ -1,4 +1,7 @@
-package Java;
+package com.attorneyrequest.common;
+
+
+import com.attorneyrequest.common.StatusCode;
 
 /**
  * @author Samnang Thorn
@@ -10,8 +13,8 @@ public class Status {
     private boolean processing = false;
 
     /**
-     * Contructor.
-     * @param statusCode from StatusCode enum.
+     * Constructor.
+     * @param statusCode from StatusCode ENum.
      */
     public Status(StatusCode statusCode){
         // check for null input
@@ -27,6 +30,8 @@ public class Status {
                 break;
             case PROCESSING:
                 this.processing = true;
+                break;
+            default:
                 break;
         }
     }
@@ -49,7 +54,7 @@ public class Status {
 
     /**
      * Getter method.
-     * @return the current StatusCode enum which is true.
+     * @return the current StatusCode ENum which is true.
      */
     public StatusCode getStatusCode(){
         if(approved){
