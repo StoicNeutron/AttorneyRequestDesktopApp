@@ -11,7 +11,7 @@
   <li>Push it back to the Repo: <code>git push</code> or <code>git push --set-upstream origin your_branch_name</code> for the first time to do the push.</li>
   <li>Pull request: In the github website, go to the repo and your branch, click create a pull request. Congratulation! You have contribute to the creation of this repo.</li>
 </ol>
-<p>Note! The above steps are the only way, as long as you able to push in to the right branch and clear the issue from the issue board, you good to go.</p>
+<p>Note! The above steps aren't the only way, as long as you able to push in to the right branch and clear the issue from the issue board, you good to go.</p>
 
 <h5>Team Members</h5>
 <ul>
