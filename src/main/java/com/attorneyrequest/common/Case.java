@@ -11,8 +11,8 @@ public class Case{
     private LocalDateTime startDate = null;
     private LocalDateTime submitDate = null;
     private LocalDateTime lastEditDate = null;
-    //private Immigrant immigrant = null;
-    //private Attorney attorney = null;
+    private Immigrant immigrant = null;
+    private Attorney attorney = null;
     private Status status = null;
 
     /**
@@ -63,5 +63,21 @@ public class Case{
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public Immigrant getImmigrant() {
+        return immigrant;
+    }
+
+    public void setImmigrant(Immigrant immigrant) {
+        this.immigrant = immigrant;
+    }
+    
+    public Attorney getAttorney() {
+        return attorney;
+    }
+
+    public void setAttorney(Attorney attorney) {
+        this.attorney = attorney;
     }
 }
