@@ -8,7 +8,7 @@
   <li>Create a new branch in your local: <code>git branch branch_name_of_your_issue_linked</code></li>
   <li>Checkout that new branch and do your program: <code>git checkout branch_name_of_your_issue_linked</code></li>
   <li>After done making change: <code>git commit -m"your commit message"</code> make sure that you stage the file which you made change to using <code>git add your_file_to_commit</code></li>
-  <li>Push it back to the Repo: <code>git push</code></li>
+  <li>Push it back to the Repo: <code>git push</code> or <code>git push --set-upstream origin your_branch_name</code> for the first time to do the push.</li>
   <li>Pull request: In the github website, go to the repo and your branch, click create a pull request. Congratulation! You have contribute to the creation of this repo.</li>
 </ol>
 <p>Note! The above steps are the only way, as long as you able to push in to the right branch and clear the issue from the issue board, you good to go.</p>
