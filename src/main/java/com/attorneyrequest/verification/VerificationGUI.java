@@ -5,7 +5,7 @@ package com.attorneyrequest.verification;
  * @author stoicneutron
  */
 public class VerificationGUI extends javax.swing.JInternalFrame {
-
+    // Hello WORLD
     /**
      * Creates new form verificationGUI
      */
