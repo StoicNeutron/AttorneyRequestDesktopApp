@@ -1,4 +1,5 @@
 package com.attorneyrequest.verification;
+import com.attorneyrequest.verification.VerificationWorkflow;
 
 /**
  *
@@ -177,6 +178,8 @@ public class VerificationGUI extends javax.swing.JInternalFrame {
                 // enable validation button back
                 startButton.setEnabled(true);
                 resultTxtField.setText("Result either accept or reject should update here!");
+        //                resultTxtField.setText();
+
             } catch (InterruptedException e) {
             }
         });
