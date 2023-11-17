@@ -1,4 +1,5 @@
 package com.attorneyrequest.verification;
+import com.attorneyrequest.verification.VerificationWorkflow;
 
 /**
  *
@@ -141,7 +142,8 @@ public class VerificationGUI extends javax.swing.JInternalFrame {
      * Action handle fir start button.
      * @param evt
      */
-    private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {                                            
+    private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {     
+        //String s = outputString();                                       
         // animation thread
         Thread thread = new Thread(() -> {
             try {
@@ -176,7 +178,8 @@ public class VerificationGUI extends javax.swing.JInternalFrame {
                 progressLable.setText("Process Finished!");
                 // enable validation button back
                 startButton.setEnabled(true);
-                resultTxtField.setText("Result either accept or reject should update here!");
+                resultTxtField.setText(VerificationWorkflow.runVerificationWorkFlow());
+
             } catch (InterruptedException e) {
             }
         });
