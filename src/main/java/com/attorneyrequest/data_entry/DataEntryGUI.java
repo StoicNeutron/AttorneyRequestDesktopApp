@@ -159,11 +159,11 @@ public class DataEntryGUI extends javax.swing.JInternalFrame {
             }
         });
 
-        // aptSuit lable
+        // states
         states.setBackground(new java.awt.Color(255, 255, 255));
         states.setForeground(new java.awt.Color(255, 255, 255));
         states.setText("State:");
-        // aptSuit input field
+        // states input field
         statesInput.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         statesInput.setSize(new java.awt.Dimension(64, 23));
         statesInput.addActionListener(new java.awt.event.ActionListener() {
@@ -421,7 +421,7 @@ public class DataEntryGUI extends javax.swing.JInternalFrame {
             infoTxt.setText("Ready: Click the Validation Tab to start the next process!");
             infoTxt.setForeground(Color.green);
         }else{
-            infoTxt.setText("Incomplete! Infomation Require!" + DataBase_DataEntry.getCounter());
+            infoTxt.setText("Incomplete! Infomation Require!");
             infoTxt.setForeground(Color.red);
         }
         infoTxt.repaint();
