@@ -19,7 +19,8 @@ public class RequestAttorneyApp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton validation;
     private javax.swing.JButton verification;
-    javax.swing.JInternalFrame[] uIList = new javax.swing.JInternalFrame[3];
+    private javax.swing.JInternalFrame[] uIList = new javax.swing.JInternalFrame[3];
+    private javax.swing.JInternalFrame currentInternalFrame;
 
     /**
      * Constructor.
@@ -36,6 +37,7 @@ public class RequestAttorneyApp extends javax.swing.JFrame {
         uIList[0] = (dataEntryGUI);
         uIList[1] = (validationGUI);
         uIList[2] = (verificationGUI);
+        currentInternalFrame = dataEntryGUI;
     }
 
     /**
@@ -137,9 +139,11 @@ public class RequestAttorneyApp extends javax.swing.JFrame {
     }
 
     private void verificationActionPerformed(java.awt.event.ActionEvent evt) {
-        this.displayArea.removeAll();
-        this.displayArea.add(uIList[2]);
-        uIList[2].setVisible(true);
+        if(!currentInternalFrame.equals(uIList[0])){
+            this.displayArea.removeAll();
+            this.displayArea.add(uIList[2]);
+            uIList[2].setVisible(true);
+        }
     }
 
     private void validationActionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,6 +152,7 @@ public class RequestAttorneyApp extends javax.swing.JFrame {
             this.displayArea.removeAll();
             this.displayArea.add(uIList[1]);
             uIList[1].setVisible(true);
+            currentInternalFrame = uIList[1];
         }
     }
 
