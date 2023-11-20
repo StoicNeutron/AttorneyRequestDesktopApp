@@ -7,21 +7,25 @@ import java.time.LocalDateTime;
  */
 public class Case{
     
-    private String caseID = null;
-    private LocalDateTime startDate = null;
-    private LocalDateTime submitDate = null;
-    private LocalDateTime lastEditDate = null;
-    private Immigrant immigrant = null;
-    private Attorney attorney = null;
-    private Status status = null;
+    private String caseID;
+    private LocalDateTime startDate;
+    private LocalDateTime submitDate;
+    private LocalDateTime lastEditDate;
+    private Immigrant immigrant;
+    private Attorney attorney;
+    private Status status;
 
     /**
      * Constructor.
      */
     public Case(){
-        this.caseID = "TO DO"; // to do function generate unique case ID
-        this.startDate = LocalDateTime.now();
-        this.status = new Status(StatusCode.PROCESSING);
+        this.caseID = null;
+        this.startDate = null;
+        this.submitDate = null;
+        this.lastEditDate = null;
+        this.immigrant = null;
+        this.attorney = null;
+        this.status = null;
     }
 
     // setters and getters
