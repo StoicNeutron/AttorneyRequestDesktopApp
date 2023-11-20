@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * @author Samnang Thorn
+ */
 class DataBase_DataEntryTest {
 
     @Test
