@@ -14,6 +14,7 @@ public class VerificationWorkflow {
     static Random rand = new Random();
     static String output = "";
     static String s = "";
+    static String attorneyName;
 
     private static StatusCode accept = StatusCode.APPROVED;
     private static StatusCode deny = StatusCode.REJECT;
@@ -44,6 +45,7 @@ public class VerificationWorkflow {
 
         //Simulates setting the attorney to one of the attorneys
         c.setAttorney(attorneys[p]);
+        attorneyName = attorneys[p].toString();
 
         //Randomly set the status to either accept or deny
         c.setStatus(new Status(status[n]));
@@ -61,4 +63,7 @@ public class VerificationWorkflow {
         return s;
     }
 
+    public static String getAttorneyName(){
+        return attorneyName;
+    }
 }
