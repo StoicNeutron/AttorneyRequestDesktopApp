@@ -1,4 +1,5 @@
 package com.attorneyrequest.verification;
+import com.attorneyrequest.validation.ValidationWorkflow;
 import com.attorneyrequest.common.Case;
 import com.attorneyrequest.common.Status;
 import com.attorneyrequest.common.StatusCode;
@@ -6,28 +7,25 @@ import java.util.Random;
 import com.attorneyrequest.common.Attorney;
 /**
  * This is the workflow class of Verification, AKA: business logic of Verification.
- * @author Thierry
+ * @author Thierry Manapsal
  */
 public class VerificationWorkflow {
     //getCaseFile
     static Random rand = new Random();
     static String output = "";
     static String s = "";
+    static String attorneyName;
 
-    private static Case caseFile = null;
-    private static Status status = null;
     private static StatusCode accept = StatusCode.APPROVED;
     private static StatusCode deny = StatusCode.REJECT;
 
-
     public static String runVerificationWorkFlow(){
-        Case c = new Case();
-        c.setCaseID("123");
+        //get the casefile off the validation workflow
+        Case c = ValidationWorkflow.getValidation();
 
-        //generates random choice
+        //generates random choice to simulate an attorney's choice
         int p = rand.nextInt(3);
         int n = rand.nextInt(2);
-        int caseNum = rand.nextInt(99);
 
         //all attorneys to choose from
         Attorney[] attorneys = new Attorney[4];
@@ -45,38 +43,27 @@ public class VerificationWorkflow {
         //options to either accept or deny cases
         StatusCode[] status = {accept, deny};
 
-        //get the casefile off the workflow
-        //caseFile = DataEntryWorkflow.getCaseFile();
-        
-        caseFile = c;
-
-        //Randomly set the attorney to one of the attorneys
-        //System.out.print("p: " + p);
-        caseFile.setAttorney(attorneys[p]);
+        //Simulates setting the attorney to one of the attorneys
+        c.setAttorney(attorneys[p]);
+        attorneyName = attorneys[p].toString();
 
         //Randomly set the status to either accept or deny
-        caseFile.setStatus(new Status(status[n]));
+        c.setStatus(new Status(status[n]));
         if(n == 0){
             s = "ACCEPTED.";
         }else{
             s = "DENIED.";
         }
 
-       output = "CaseID: " + caseFile.getCaseID() + " was verified by " + attorneys[p].getName() + ". The case was: " + s;
-       output = "CaseID: " + caseNum + " was verified by " + attorneys[p].getName() + ". The case was: " + s;
+       output = "CaseID: " + c.getCaseID() + " was verified by " + attorneys[p].getName() + ". The case was: " + s;
        return output;
     }
 
-    public static String outputString(){
-        return output;
+    public static String outputStatus(){
+        return s;
     }
 
-
-    
-
-    
-    
-
-
-
+    public static String getAttorneyName(){
+        return attorneyName;
+    }
 }
